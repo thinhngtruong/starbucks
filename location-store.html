@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="starbucks.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wraper">
+            <div class="header-logo">
+                <a href="homepage.html"><img src="/starbucks/img/iconfinder_starbucks_294657 (2).png" alt=""></a>
+            </div>
+            <div class="header-mrg">
+                <ul>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="rewards.html">REWARDS</a></li>
+                    <li><a href="gift-cards.html">GIFT CARDS</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a href="location-store.html"><img src="/starbucks/img/iconfinder_icon-location_211854 (1).png" alt="">Find a store</a>
+                <a href="" id="signin">Sign in</a>
+                <a href="" id="join">Join now</a>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <article class="article-local">
+        <section class="section-local-find">
+            <div class="find-local">
+                <input type="text" placeholder="Find a store" id="find-local-input">
+                <button id="find-local-btn">Filter</button>
+                <h2>We are unable to access your exact location</h2>
+                <p>To find a Starbucks store, use the search feature, navigate using the map, or turn on location services.</p>
+            </div>
+        </section>
+        <section class="section-local-map">
+            <div id="map"></div>
+        </section>
+    </article>
+
+
+
+    <footer>
+        <div>
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <ul>
+                        <h3>About us</h3>
+                        <li><a href="">MENU</a></li>
+                        <li><a href="">REWARDS</a></li>
+                        <li><a href="">GIFT CARDS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+
+                    <ul>
+                        <h3>Careers</h3>
+                        <li><a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values">Culture and Values</a></li>
+                        <li><a href="https://stories.starbucks.com/stories/inclusion-diversity/">Inclusion, Diversity, and Equity</a></li>
+                        <li><a href="https://www.starbucks.com/careers/working-at-starbucks/education">College Achievement Plan</a></li>
+                        <li><a href="https://www.starbucks.com/careers/">U.S. Careers</a></li>
+                        <li><a href="https://www.starbucks.com/careers/international-careers">International Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+
+                    <ul>
+                        <h3>Social Impact</h3>
+                        <li><a href="https://www.starbucks.com/responsibility/sourcing">Ethical Sourcing</a></li>
+                        <li><a href="https://stories.starbucks.com/stories/planet/">Leading in Sustainability</a></li>
+                        <li><a href="https://www.starbucks.com/responsibility/community">Strengthening Communities</a></li>
+                        <li><a href="https://www.starbucks.com/responsibility/community/opportunity-youth">Creating Opportunities</a></li>
+                        <li><a href="https://www.starbucks.com/responsibility/global-report">Global Social Impact Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+
+                    <ul>
+                        <h3>For Business Partners</h3>
+                        <li><a href="https://www.starbucks.com/business/landlord-faq">Landlord Support Center</a></li>
+                        <li><a href="https://www.starbucks.com/business/suppliers">Suppliers</a></li>
+                        <li><a href="https://www.starbuckscardb2b.com/">Corporate Gift Card Sales</a></li>
+                        <li><a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">Office and Foodservice Coffee</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-5">
+
+                    <ul>
+                        <h3>Order and Pickup</h3>
+                        <li><a href="">Order on the Web</a></li>
+                        <li><a href="https://delivery.starbucks.com/">Delivery</a></li>
+                        <li><a href="">Order and Pickup Options</a></li>
+                        <li><a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="icon">
+                <a href="https://www.facebook.com/Starbucks/"><img src="/starbucks/img/iconfinder_Circled_Facebook_svg_5279111 (1).png" alt=""></a>
+                <a href="https://www.instagram.com/starbucks/"><img src="/starbucks/img/iconfinder_Circled_Instagram_svg_5279112.png" alt=""></a>
+                <a href="https://www.pinterest.com/starbucks/_created/"><img src="/starbucks/img/iconfinder_Circled_Pinterest_svg_5279116 (1).png" alt=""></a>
+                <a href="https://www.youtube.com/starbucks"><img src="/starbucks/img/iconfinder_Circled_Youtube_svg_5279120 (1).png" alt=""></a>
+                <a href="https://open.spotify.com/user/starbucks"><img src="/starbucks/img/iconfinder_spotify_rounded_621252 (2).png" alt=""></a>
+                <a href="https://twitter.com/starbucks/"><img src="/starbucks/img/iconfinder_43-twitter_104461.png" alt=""></a>
+                <p style="color: darkgray;">© 2021 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    function initMap() {
+        var myOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(10.7702343, 106.6933901),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(10.7702343, 106.6933901)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<img src="<?php echo get_template_directory_uri() ?>/images/logo-vn4u.png" alt="" style="width:90px; "><div>Công ty Vn4U</div>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', initMap);
+
+    //
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSs_sg7gLVWnf7ShumPE4lmx6avohlJE&callback=initMap&language=en">
+</script>
